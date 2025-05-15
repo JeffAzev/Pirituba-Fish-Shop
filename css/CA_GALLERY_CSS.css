@@ -1,0 +1,200 @@
+/*I created a new css, because it made visualization easier for me.*/
+/*I created the logo*/
+body{
+    background-color: rgb(220, 238, 254);
+}
+
+.container{
+    background-image: url('Background.jpeg');
+}
+.Logo{
+    /*I chose 50% to keep the image proportional and auto for height follow the width*/
+        max-width: 50%;
+        height: auto;
+    /*I choose block to break a line before and after the image*/
+        display: block;
+    /*I chose 20px auto to centralize it */    
+        margin: 20px auto;
+    
+    }
+    
+    .box {
+    /*I chose the same width to keep proportional*/
+        max-width: 50%;
+    /*I chose 0 auto and center for each one to keep it in the center and horizontal*/
+        margin: 0 auto; 
+        text-align: center;
+    /*I insert this margin bottom to get a space between links and images*/
+        margin-bottom: 10px;
+    }
+    
+    .box a {
+    /*I chose 8px for padding to give a enough distance between the links*/
+        padding: 8px;
+    /*This color is the same for links and logo*/
+        color: #525DC4;
+    /*I use none to take off the underline and the size I chose 18px because looks better*/
+        text-decoration: none;
+        font-size: 18px;
+    }
+    
+    a:hover{
+    /*Just to change tje links's color*/
+        color: #72C6EF;
+    }
+
+.First{
+    /*I used display flex and justify center to keep the two boxes in the middle.*/
+    display: flex;
+    justify-content: center;
+    /*I used margin-bottom to get a gap between each section.*/
+    margin-bottom: 5px;
+}
+
+.First img, .First p{
+    /*I chose this width to make the page look nice.*/
+    width: 30%;
+    /*I chose this border to make the page look nice*/
+    border-radius: 10px;
+}
+
+.First img{
+    /*I used margin-right to get a gap between each section.*/
+    margin-right: 5px;
+}
+
+.First p{
+    /*I used display flex and align-items to keep the two boxes in the middle and center.*/
+    display: flex;
+    align-items: center;
+    /*I used margin 0 so that the image and the paragraph would have the same size*/
+    margin: 0;
+    /*I chose this color because I think blue is a good color for a fish shop.*/
+    background-color:  rgb(150, 205, 232);
+    /*I used padding so that at the beginning and end there would be a space.*/
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.Second{
+    /*I used display flex and justify center to keep the two boxes in the middle.*/
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.Second img, .Second p{
+    /*I chose this width and border radius to make the page look nice.*/
+    width: 30%;
+    border-radius: 10px;
+}
+
+.Second img{
+    /*I used margin-right to get a gap between each section.*/
+    margin-left: 5px;
+}
+
+.Second p{
+    /*I used display flex and align-items to keep the two boxes in the middle and center.*/
+    display: flex;
+    align-items: center;
+    /*I used margin 0 so that the image and the paragraph would have the same size*/
+    margin: 0;
+    /*I chose this color because I think blue is a good color for a fish shop.*/
+    background-color:  rgb(150, 205, 232);
+    /*I used padding so that at the beginning and end there would be a space.*/
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.visit{
+    /*I used width 80% to get a good space to people see it easily*/
+    width: 80%;
+    /*I chose this font size for better readability*/
+    font-size: 7px;
+    /*I used this margin to cetralize the div*/
+    margin: 50px auto;
+    /*I chose this font because I wanted it to be different from the texts referring to the photos.*/
+    font-family: sans-serif;
+    /*I used justify to distribute text evenly*/
+    text-align: center;
+    /*I used line-height to get more space between the lines.*/
+    line-height: 1.6
+}
+
+    /*recipesHTML*/
+
+.textrecipe{
+    /*I used display flex, flex direction column and align center to keep the text in the middle.*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*I used justify to distribute text evenly*/
+    text-align: center;
+    /*I chose this font, size and bolder because I wanted that customer see better the text.*/
+    font-family: sans-serif;
+    font-size: 10px;
+    font-weight: bolder;
+}
+
+.textrecipe #customerDetails{
+    /*I used display flex and justify center to keep in the middle.*/
+    display: flex;
+    flex-direction: column;
+}
+
+.textrecipe label{
+    /*I chose this to make it better.*/
+    font-size: 15px;
+    /*I insert it to leave the label on the button*/
+    display:flex;
+}
+
+.recipe1{
+    /*I chose this color to intersperse each recipe.*/
+    background-color: rgb(83, 192, 243);
+    /*I used display flex and align items to keep the three boxes in the middle by column.*/
+    display: flex;
+    align-items: center;
+}
+
+.recipe1 img{
+    /*Keep the picture proportional.*/
+    width: 100%;
+}
+
+.recipe1 >div{
+    /*I used this flex and padding to to organizer the columns and it looks better.*/
+    flex: 1;
+    padding: 0 10px;
+}
+
+.recipe1 .Ingredients{
+    /*I used display flex and justify center to keep the text in the midle of box.*/
+    display: flex;
+    justify-content: center
+}
+
+.recipe2{
+    /*I chose this color to intersperse each recipe.*/
+    background-color: rgb(156, 220, 249);
+    /*I used display flex and align items to keep the three boxes in the middle by column.*/
+    display: flex;
+    align-items: center;
+}
+
+.recipe2 img{
+    /*Keep the picture proportional.*/
+    width: 100%;
+}
+
+.recipe2 >div{
+    /*I used this flex and padding to to organizer the columns and it looks better.*/
+    flex: 1;
+    padding: 0 10px;
+}
+
+.recipe2 .Ingredients{
+    /*I used display flex and justify center to keep the text in the midle of box.*/
+    display: flex;
+    justify-content: center
+}

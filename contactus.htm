@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--In this head I'm going to add 2 import methods-->
+    <!--One method is to import the style for the html-->
+    <link rel="stylesheet" href="css/CA_CSS.css">
+    <!--The other is to import the JavaScript code to the html-->
+    <script src="js/CA_JavaScript.js"></script>
+
+    <title>Pirituba Fish Shop</title>
+</head>
+<body>
+    <!--Created a logo for the website-->
+    <div class="container">
+        <img src="Image/Logo (1).png" alt="This is a picture of a home page" class="Logo">
+    </div>
+    <!--Created a html for each page for my website-->
+    <div class="box">
+        <a href="home.html"> Home </a>
+        <a href="gallery.html">Gallery</a>
+        <a href="recipes.htm">Recipes</a>
+        <a href="contactus.htm">Contact</a>
+    </div>
+    <div class="ContactImage">
+        <img src="Image/ContactImage.png" alt="This is a picture of a Contact page" class="ContactPic">
+    </div>
+    <!--Inside the contactcantainer i isert two divs to keep them in the same box-->
+    <div class="ContactContainer">
+        <div class="Contact">
+        <h1>Hosting a seafood party?</h1>
+        <p>Dive into our delightful selection of fresh catches from the deep blue sea! From succulent shrimp to flaky fillets, 
+            we offer a bounty of oceanic treasures to satisfy every seafood lover's palate. 
+            Enhance your spread with our assortment of specialty sauces, marinades, and seafood accompaniments. 
+            Whether you're grilling up plump prawns, baking buttery salmon, or frying crispy calamari, 
+            ur premium seafood selection is sure to make a splash at your gathering. And don't forget, 
+            we're happy to provide custom seafood platters and gourmet fish dishes tailored to your taste. 
+            Let us make your seafood celebration an unforgettable oceanic feast!</p>
+        <p>
+            <strong>Contact us on</strong><br>
+            email: info@pitirubafishshop.com
+        </p>    
+        </div>
+        <div id="ContactForm">
+            <h2>Place an order</h2>
+            <!--I used onsubmit so that the function created in javascript takes effect on this form.-->
+            <!--I used Riquired to make it a mandatory field and title to have a text explaining what the customer should do.-->
+            <!--I used placeholder so that what is in quotation marks is written in the field-->
+            <!--I used form to to collect the client inputs-->
+            <form id="form" onsubmit="return validateForm()">
+            <p>
+                <!--I used text type for name because I wanted a text line.-->
+                <input type="text" id="name" value="" placeholder="Name" required title="Please insert your name." ><br><br>
+                <!--I used email type for client use only email in that field.-->
+                <input type="email" id="email" value="" placeholder="Email Address" required title="Please insert a valid email address."><br><br>
+                <!--I used tel type to isert a phone number-->
+                <input type="tel" id="phone" value="" placeholder="Telephone" required title="Please insert a phone number."><br><br>
+                <!--I used select with options to make easier for cutomer.-->
+                <select name="people" id="people" required>
+                    <option value="" disabled selected>How many people?</option>
+                    <option value="10">Up to 10 people</option>
+                    <option value="20">Up to 20 people</option>
+                    <option value="30">More than 30 people</option>
+                </select><br><br>
+                <!--In this case I used label because I could not inset a text in the field, so I insert the text above the the field-->
+                <!--I used date type to insert a calendar where customer can choose the delivery date..-->
+                <label for="date" class="orderDate">Please select a date for your order.</label><br>
+                <input type="date" id="date" value="" required><br><br>
+                <!--I used a textarea for cliente insert a text until 200 characters.-->
+                <textarea id="message" name="message" placeholder="message" required title="Please insert your order. 
+                    If your event is intended for a party of more than 30 people, please provide the exact number of attendees." 
+                    maxlength="200"></textarea><br><br>
+                <!--I used button in this case to create a bubtton where customer could click and the submit type to send the form.-->
+                <button type="submit">Submit</button>
+            </p>
+            </form>
+        </div> 
+    </div>
+    <!--I used onsubmit so that the function created in javascript takes effect on this form.-->
+    <form id="join" onsubmit="return emailJoinValidate()">
+        <p>
+            <strong>Subscribe to Pirituba fish shop to receive news & promotions.</strong>
+        </p>
+        <div>
+            <!--I used email type for client use only email in that field.-->
+            <input type="email" id="emailJoin" value="" placeholder="Email Address" required title="Please insert a valid email address.">
+        </div><br>
+        <!--I used button in this case to create a bubtton where customer could click and the submit type to send the form.-->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--In this head I'm going to add 2 import methods-->
+<!--One method is to import the style for the html-->
+    <link rel="stylesheet" href="css/CA_GALLERY_CSS.css">
+<!--The other is to import the JavaScript code to the html-->
+    <script src="js/CA_JavaScript.js"></script>
+
+    <title>Pirituba Fish Shop</title>
+</head>
+<body>
+    <!--Created a logo for the website-->
+    <!--Created a class to organize better in CSS-->
+    <div class="container">
+        <!-- Created a class for each image to organize better in CSS-->
+        <img src="Image/Logo (1).png" alt="This is a picture of a home page" class="Logo">
+    </div>
+    <!--Created a html for each page im my website-->
+    <div class="box">
+        <a href="home.html"> Home </a>
+        <a href="gallery.html">Gallery</a>
+        <a href="recipes.htm">Recipes</a>
+        <a href="contactus.htm">Contact</a>
+    </div>
+    <!--I insert a textrecipe div to leave the text on the top.-->
+    <div class="textrecipe">
+        <h1>
+            Customer recipes
+        </h1>
+        <p>
+            At Pirituba fish store, we love to celebrate our community's cooking skills. We are happy to start a new blog on our site. 
+            It's all about sharing your best seafood recipes!<br><br>
+            We know many of you make great dishes with our fresh fish. Sharing your recipes can inspire others to cook more creatively at 
+            home.<br><br>
+            If you have a favorite seafood recipe, we'd love to feature it on our blog. Whether it's a family recipe or something new, we 
+            want to hear about it!<br><br>
+            We would love it if you could share a picture of your dish along with the recipe. Your photos will make others want to try your recipe 
+            too.<br><br>
+            To send us your recipe and photo, please fill in the form below.<br><br>
+            Thank you for being part of our cooking community. We are excited to see all the great recipes you will share!<br><br>
+        </p>
+        <!--I used onsubmit so that the function created in javascript takes effect on this form.-->
+        <!--I used Riquired to make it a mandatory field and title to have a text explaining what the customer should do.-->
+        <!--I used placeholder so that what is in quotation marks is written in the field-->
+        <!--I used form to to collect the client inputs-->
+        <form id="customerDetails" onsubmit="return validateRecipeForm()">
+            <!--I used text type for name because I wanted a text line.-->
+            <input type="text" id="nameRecipe" value="" placeholder="Name" required title="Please insert your name." ><br><br>
+            <!--I used email type for client use only email in that field.-->
+            <input type="email" id="emailRecipe" value="" placeholder="Email Address" required title="Please insert a valid email address."><br><br>
+            <!--In this case I used label because I could not inset a text on the button, so I insert the text above the button-->
+            <!--I used file type to insert a button to client click and choose the picture that they want to send.-->
+            <label for="recipeImg">Upload Picture</label><br>
+            <input type="file" id="recipeImg" value="" placeholder="Image" required title="Please input you recipe picture."><br><br>
+            <!--I used a textarea for cliente insert a text until 200 characters.-->
+            <textarea id="message" name="message" placeholder="Recipe Description" required title="Please insert your recipe! Thanks you!" 
+                        maxlength="200"></textarea><br><br>
+            <!--I used button in this case to create a bubtton where customer could click and the submit type to send the form.-->
+            <button type="submit">Submit</button><br><br>
+        </form>    
+    </div>
+    <!--I used a father to keep the other three div into this div father.-->
+    <!--For the three recipes I used same code.-->
+    <!--All of images are mine in this page-->
+    <!--I Input img first because I wanted put the image on left-->
+    <div class="recipe1">
+        <div>
+            <img src="Image/TunaCrusted.jpeg" alt="This is a Tuna Crusted plater picture">
+            <p>
+                Customer: Denise Zoz
+            </p>
+            <p>
+                <strong>
+                    Tuna Crusted
+                </strong>
+            </p>
+        </div>
+        <div class="Ingredients">
+            <!--I used ul to insert a unordered list.-->
+            <ul>
+                <strong>Ingredients:</strong><br><br>
+                <p><strong>Tuna</strong></p>
+                <!--I used li to insert the bullet point, because as it is a unordered list the bullet point will be appear.-->
+                <li>170g of Tuna</li><br>
+                <li>2 tablespoons sesame oil</li><br>
+                <li>1 tablespoon olive oil</li>
+                <li>1/4 cup black sesame seeds</li><br>
+                <li>1/4 cup white sesame seeds</li><br><br>
+                <p><strong>Mushroom Rice</strong></p>
+                <li>500g mushroom</li>
+                <li>1 tablespoon olive oil</li>
+                <li>1/2 onion</li>
+                <li>1 cup rice</li>
+                <li>2 cups water</li>   
+            </ul>
+        </div>
+        <div>
+            <!--For this case I used ol because I wanted insert a list ordered by number.-->
+            <ol>
+                <p><strong>Tuna Instructions:</strong></p>
+                <!--In this case the "li" was used to insert number.-->
+                <li>Mix the white and black sesame seeds on a shallow plate.</li>
+                <li>Season the tuna steaks with salt and pepper to taste.</li>
+                <li>Dip the tuna steaks in olive oil, ensuring they are fully coated.</li>
+                <li>Press each side of the tuna steaks into the sesame seeds, covering them evenly.</li>
+                <li>Heat a skillet over medium-high heat and add a tablespoon of olive oil.</li>
+                <li>Sear the tuna steaks for 45 seconds to 1 minute on each side, or until the sesame seeds are 
+                    lightly toasted and the tuna is cooked to your desired doneness (the interior should remain pink).</li>
+                <li>Remove the tuna steaks from the skillet and set aside.</li>
+            </ol>
+            <ol>
+                <p><strong>Mushroom Rice Instructions:</strong></p>
+                <li>In a skillet, heat a tablespoon of olive oil over medium heat.</li>
+                <li>Add 1/2 onion and sauté until golden brown.</li>
+                <li>Add all mushrooms and cook until golden brown.</li>
+                <li>Remove some mushrooms from the skillet and set aside for garnish.</li>
+                <li>Add the rice to the skillet and sauté.</li>
+                <li>Pour the water into the skillet and season with salt to taste.</li>
+                <li>Cook the rice over medium-low heat until all the liquid has been absorbed and the rice is cooked.</li>
+                <li>Once the rice is ready, add the reserved mushrooms on top for garnish.</li>
+                <li>Serve the grilled tuna with the hot mushroom rice.</li>
+            </ol>
+        </div>
+    </div>
+    <div class="recipe2">
+        <div>
+            <img src="Image/Stuffed Seabass.jpeg">
+            <p>
+                Customer: Celia Shigueki
+            </p>
+            <p>
+                <strong>
+                    Stuffed Seabass
+                </strong>
+            </p>
+        </div>
+        <div class="Ingredients">
+            <ul>
+                <strong>Ingredients:</strong><br><br>
+                <li>1 whole Seabass</li><br>
+                <li>olives</li><br>
+                <li>parsley</li><br>
+                <li>5 cloves of garlic</li><br>
+                <li>1 lemon</li><br>
+                <li>1 tablespoon olive oil</li><br>
+                <li>Broccolis</li><br>
+                <li>Asparguss</li><br>
+            </ul>
+        </div>
+        <div>
+            <ol>
+                <strong>Instructions:</strong><br>
+                <li>Preheat the oven to 180°C.</li>
+                <li>In a small bowl, mix together the chopped parsley, minced garlic, and lemon juice. Season with salt and pepper to taste.</li>
+                <li>Make three to four diagonal cuts on the skin side of the sea bass, being careful not to cut too deep.</li>
+                <li>Spread the parsley, garlic, and lemon mixture inside the cavities of the fish.</li>
+                <li>Place some olives inside the fish, along with the parsley and garlic mixture.</li>
+                <li>Drizzle the fish with one tablespoon of extra virgin olive oil and spread the remaining over the fish</li>
+                <li>Place the sea bass on a baking tray.</li>
+                <li>Arrange the vegetables around the fish on the baking tray.</li>
+                <li>Bake in the preheated oven for 20 to 25 minutes, or until the fish is cooked through and the vegetables are tender.</li>
+                <li>Remove from the oven and serve the stuffed sea bass hot, accompanied by the roasted vegetables.</li>
+            </ol>
+        </div>
+    </div>
+    <div class="recipe1">
+        <div>
+            <img src="Image/Salmon Wellington.jpeg">
+            <p>
+                Customer: Jefferson Azevedo
+            </p>
+            <p>
+                <strong>
+                    Salmon Wellington
+                </strong>
+            </p>
+        </div>
+        <div class="Ingredients">
+            <ul>
+                <strong>Ingredients:</strong><br>
+                <li>2 Salmons Darnes</li><br>
+                <li>2 Sheets of Puffy Pastry</li><br>
+                <li>300g Mushrooms</li><br>
+                <li>500g Spinach</li><br>
+                <li>1 tablespoon Dijon Mustard</li><br>
+                <li>Parmesan Cheese</li><br>
+                <li>1 Egg</li><br>
+                <li>1 tablespoon olive oil</li><br>
+                <li>2 cloves of garlic</li><br>
+                <li>Sesame Seeds</li><br>
+            </ul>
+        </div>
+        <div>
+            <ol>
+                <strong>Instructions:</strong><br>
+                <li>Preheat the oven to 180°C</li>
+                <li>In a skillet, heat olive oil over medium heat. Add minced garlic and sauté until golden brown.</li>
+                <li>Add chopped mushrooms to the skillet and cook until golden brown. Then, add grated Parmesan cheese and 
+                    stir until incorporated. Set aside.</li>
+                <li>Roll out the puff pastry sheets and brush a thin layer of Dijon mustard on each.</li>
+                <li>Place a salmon fillet on top of the mustard on each puff pastry sheet.</li>
+                <li>Spoon the mushroom and Parmesan mixture over the salmon fillets.</li>
+                <li>Sprinkle a little more grated Parmesan cheese on top of the mushroom mixture.</li>
+                <li>Fold the puff pastry over the salmon and press the edges to seal.</li>
+                <li>Brush the top of the puff pastry with egg wash.</li>
+                <li>If desired, sprinkle some sesame seeds on top of the puff pastry.</li>
+                <li>Place the Salmon Wellingtons on a baking sheet lined with parchment paper.</li>
+                <li>Remove from the oven, let them rest for a few minutes, and serve.</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>

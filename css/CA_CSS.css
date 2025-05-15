@@ -1,0 +1,281 @@
+/*I insert this background because I didn't like it too white.*/
+body{
+    background-color: rgb(240, 247, 253);
+}
+
+/*I chose this picture form common*/
+.container{
+    background-image: url('Background.jpeg');
+}
+
+/*I created the logo*/
+.Logo{
+    /*I chose 50% to keep the image proportional and auto for height follow the width*/
+    max-width: 50%;
+    height: auto;
+    /*I choose block to break a line before and after the image*/
+    display: block;
+    /*I chose 20px auto to centralize it */    
+    margin: 20px auto;
+}
+
+.box {
+    /*I chose the same width to keep proportional*/
+    max-width: 50%;
+    /*I chose 0 auto and center for each one to keep it in the center and horizontal*/
+    margin: 0 auto; 
+    text-align: center; 
+}
+
+.box a {
+    /*I chose 8px for padding to give a enough distance between the links*/
+    padding: 8px;
+    /*This color is the same for links and logo*/
+    color: #525DC4;
+    /*I use none to take off the underline and the size I chose 18px because looks better*/
+    text-decoration: none;
+    font-size: 18px;
+}
+
+a:hover{
+    /*Just to change tje links's color*/
+    color: #72C6EF;
+}
+
+.LeftPic, .RightPic{
+    /*All of them are for better viewing of the website*/
+    height: auto;
+    margin: 20px auto;
+    width: 200px;  
+}
+
+.AboutUs {
+    /*Display flex I used for to keel the images and text in horizontal*/
+    display: flex;
+    /*I used aling to keel the images and text in the center*/
+    align-items: center;
+    max-width: 800px; 
+    margin: 0 auto;
+}
+
+.text {
+    padding: 0 20px;
+    /*I used justify to distribute text evenly*/ 
+    text-align: justify;
+}
+
+.openHour{
+    /*I selected this width to ensure that it maintains proportionality with the box beside.*/
+    width: 360px;
+    /*I chose this background because this shade of blue reminds me of the ocean, and I chose an opacity of 0.5 so it wouldn't be too vibrant.*/
+    background: linear-gradient(to bottom, rgba(114, 198, 239, 0.5), rgba(255, 255, 255, 0.5));
+    /*I chose this margin size to make the box look prettier.*/
+    margin-right: 15px;
+    margin-left: 15px;
+    /*I chose this border because I think it is better.*/
+    border-radius: 50px;
+}
+
+.openHour h3{
+    /*I chose this font size to differentiate the title from the text.*/
+    font-size: 20px;
+    /*I used display flex and justify center to keep the text in the middle.*/
+    display: flex;
+    justify-content: center;
+}
+
+.openHour p{
+    /*I used display flex, justify center and align center to keep the text in the middle.*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*I used justify to distribute text evenly*/
+    text-align: justify;
+    /*I chose this font size to differentiate the text from the title.*/
+    font-size: 15px;
+}
+
+.Party{
+    /*I used display flex, flex direction column and align center to keep the text in the middle.*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*I chose this margin to give space between the <div> and the auto was to center*/
+    margin: 50px auto;
+    /*I chose this background because this shade of blue reminds me of the ocean, and I chose an opacity of 0.5 so it wouldn't be too vibrant.*/
+    background: linear-gradient(to bottom, rgba(114, 198, 239, 0.5), rgba(255, 255, 255, 0.5));
+    /*I selected this width to ensure that it maintains proportionality*/
+    width: 360px;
+    /*I chose this border because I think it is better.*/
+    border-radius: 10px;
+}
+
+.Party img, .Party p, .Party a{
+    /*I chose this margin size to make the box look prettier.*/
+    margin: 10px;
+    text-align: justify;
+}
+
+.Party a{
+    /*I chose black because it's better to see.*/
+    color: black;
+}
+
+.shopInfo{
+    /*I used display flex and justify center to keep the two boxes in the middle.*/
+    display: flex;
+    justify-content: center;
+}
+
+.review{
+    /*I selected this width to ensure that it maintains proportionality.*/
+    width: 360px;
+    /*I chose this background because this shade of blue reminds me of the ocean, and I chose an opacity of 0.5 so it wouldn't be too vibrant.*/
+    background: linear-gradient(to bottom, rgba(114, 198, 239, 0.5), rgba(255, 255, 255, 0.5));
+    /*I chose this margin size to make the box look prettier.*/
+    margin-right: 15px;
+    margin-left: 15px;
+    /*I chose this border because I think it is better.*/
+    border-radius: 50px;
+}
+.review h1{
+    /*I chose this font size to differentiate the title from the text.*/
+    font-size: 20px;
+    /*I used display flex and justify center to keep the title in the middle.*/
+    display: flex;
+    justify-content: center;
+}
+
+.review p{
+    /*I used display flex and justify center to keep the text in the middle.*/
+    display: flex;
+    justify-content: center;
+    /*I used justify to distribute text evenly*/
+    text-align: justify;
+    /*I chose this margin size to make the box look prettier.*/
+    margin-right: 15px;
+    margin-left: 15px;
+    /*I chose this font size to differentiate the text from the title.*/
+    font-size: 15px;
+}
+
+/*Contact form*/
+
+.ContactContainer{
+    /*I chose display flex and justify-content center to centralize*/
+    display: flex;
+    justify-content: center;    
+}
+
+.ContactPic{
+    /*I chose 50% to keep the image proportional and auto for height follow the width*/
+    max-width: 10%;
+    height: auto;
+    /*I choose block to break a line before and after the image*/
+    display: block;
+    /*I chose 20px auto to centralize it */    
+    margin: 20px auto;
+    ;
+}
+
+.Contact{
+    /*I used margin left and right to keep the classes 'contact' and 'contactForm' with a space between each other.*/
+    margin-left: 15px;
+    margin-right: 15px;
+    /*I chose this background because this shade of blue reminds me of the ocean, and I chose an opacity of 0.5 so it wouldn't be too vibrant.*/
+    background: linear-gradient(to bottom, rgba(114, 198, 239, 0.5), rgba(255, 255, 255, 0.5));
+    /*I chose this border because I think it is better.*/
+    border-radius: 10px;
+}
+
+.Contact h1{
+    /*I chose this font size to differentiate the title from the text.*/
+    font-size: 20px;
+    /*I used justify to distribute text evenly*/
+    text-align: justify;
+    /*I used display flex and justify center to keep the title in the middle.*/
+    display: flex;
+    justify-content: center;
+    /*I used margin left and right to keep the classes 'contact' and 'contactForm' with a space between each other.
+    margin-right: 15px;
+    margin-left: 15px;*/
+}
+
+.Contact p{
+    /*I chose this font size to differentiate the text from the title.*/
+    font-size: 15px;
+    /*I used justify to distribute text evenly*/
+    text-align: justify;
+    /*I chose this margin size to make the box look prettier.*/
+    margin-right: 15px;
+    margin-left: 15px;
+    /*I selected this width to ensure that it doesn't occupy excessive space and maintains proportionality.*/
+    width: 360px;
+}
+
+#ContactForm{
+    /*I chose this background because this shade of blue reminds me of the ocean, and I chose an opacity of 0.5 so it wouldn't be too vibrant.*/    
+    background: linear-gradient(to bottom, rgba(114, 198, 239, 0.5), rgba(255, 255, 255, 0.5));
+    /*I chose this border because I think it is better.*/
+    border-radius: 10px;
+}
+
+#ContactForm h2{
+    /*I chose this font size to match the box on the side.*/
+    font-size: 20px;
+    /*I used display flex and justify center to keep the title in the middle.*/
+    display: flex;
+    justify-content: center;
+}
+
+#ContactForm input{
+    /*I chose this margin size to make the box look prettier.*/
+    margin-right: 15px;
+    margin-left: 15px;
+    /*I selected this width to ensure that it maintains proportionality.*/
+    width: 360px;  
+}
+
+#ContactForm textarea#message{
+    /*I opted for this height to ensure that the box is slightly larger than the others, 
+    allowing customers to have a better view of the text they are writing.*/
+    height: 150px;
+    /*I chose this margin size to make the box look prettier.*/
+    margin-left: 15px;
+    /*I selected this width to ensure that it maintains proportionality.*/
+    width: 360px;
+}
+
+#ContactForm select{
+    /*I chose this margin size to make the box look prettier.*/
+    margin-left: 15px; 
+}
+
+#ContactForm label{
+    /*I chose this margin size to make the box look prettier.*/
+    margin-left: 15px; 
+}
+
+#ContactForm button{
+    /*I chose this margin size to make the box look prettier.*/
+    margin-left: 15px;     
+}
+
+#join{
+    /*I used display flex, flex direction column and align center to keep the text in the middle.*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*I chose this picture to be same of the logo*/
+    background-image: url(Background.jpeg);
+    /*I chose 50px to get a space between the form and the join.*/    
+    margin-top: 50px;
+}
+#join p{
+    /*I chose this font because I wanted people to be able to see and subscribe to the site*/
+    font-family: sans-serif;
+}
+#join input#emailJoin{
+    /*I insert 360px because I would like let the customers see them all email.*/
+    width: 360px;
+}
